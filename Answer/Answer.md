@@ -89,7 +89,8 @@ class Dog extends Animal {
     }
 }
 
-Animal.eat().bark();
+let dog = new Dog();
+dog.eat().bark();
 
 
 
