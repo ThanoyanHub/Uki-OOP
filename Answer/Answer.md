@@ -106,6 +106,33 @@ Create a child class `Manager` that extends `Employee` and adds a property `depa
 Override `details()` in `Manager` to also include the department.
 
 ```js
+class Employee{
+    constructor(name, salary){
+        this.name = name;
+        this.salary = salary;
+
+    }
+
+    details(){
+        return this;
+    }
+}
+
+class Manager extends Employee{
+    constructor(name, salary, department){
+        super(name, salary);
+        this.department = department;
+
+    }
+
+    details(){
+        return this;
+    }
+}
+
+let Manager1 = new Manager("Vithu", 500000 ,"SE");
+
+console.log(Manager1);
 
 ```
 

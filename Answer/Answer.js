@@ -63,3 +63,33 @@ class Dog extends Animal {
 
 let dog = new Dog();
 dog.eat().bark();
+
+//Q-04
+
+class Employee{
+    constructor(name, salary){
+        this.name = name;
+        this.salary = salary;
+
+    }
+
+    details(){
+        return this;
+    }
+}
+
+class Manager extends Employee{
+    constructor(name, salary, department){
+        super(name, salary);
+        this.department = department;
+
+    }
+
+    details(){
+        return this;
+    }
+}
+
+let Manager1 = new Manager("Vithu", 500000 ,"SE");
+
+console.log(Manager1);
