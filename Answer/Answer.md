@@ -75,6 +75,21 @@ Create a child class `Dog` that extends `Animal` and adds a method `bark()` that
 Show that `Dog` can call both `eat()` and `bark()`.
 
 ```js
+class Animal {
+    eat(){
+        console.log("eating...");
+        return this;
+    }
+}
+
+class Dog extends Animal {
+    bark(){
+        console.log("woof!");
+        return this;
+    }
+}
+
+Animal.eat().bark();
 
 
 
