@@ -44,3 +44,22 @@ class Student extends Person {
 
 let Person1 = new Student("Thanoyan",20,"A/L")
 consol.log(Student.name.age.grade);
+
+//Q-03
+
+class Animal {
+    eat(){
+        console.log("eating...");
+        return this;
+    }
+}
+
+class Dog extends Animal {
+    bark(){
+        console.log("woof!");
+        return this;
+    }
+}
+
+let dog = new Dog();
+dog.eat().bark();
