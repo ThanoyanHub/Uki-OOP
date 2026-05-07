@@ -11,6 +11,33 @@ Create a class `Vehicle` with a property `brand` and a method `describe()` that 
 Create a child class `Car` that extends `Vehicle` and adds a property `doors`.
 Create a `Car` object and call `describe()`.
 
+```js
+class Vehicle{
+
+    constructor(brand){
+        this.brand = brand ;
+    }
+
+    describe(){
+        console.log(`I am a ${this.brand}`);
+        return this;
+    }
+}
+
+class car extends Vehicle{
+    describe(){
+        console.log(`I am a ${this.brand}`);
+        return this;
+    }
+}
+
+let V1 = new Vehicle("BMW");
+V1.describe();
+
+let car1 = new car ("M4 Competition")
+car1.describe();
+
+```
 
 ---
 
@@ -19,7 +46,26 @@ Create a class `Person` with properties `name` and `age`.
 Create a child class `Student` that extends `Person` and adds a property `grade`.
 Print the student's name, age, and grade.
 
+```js
+class Person {
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
 
+}
+
+class Student extends Person {
+    constructor(name, age, grade){
+        super(name,age);
+        this.grade = grade;
+    }
+}
+
+let Person1 = new Student("Thanoyan",20,"A/L")
+consol.log(Student.name.age.grade);
+
+```
 
 ---
 
